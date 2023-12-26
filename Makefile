@@ -27,7 +27,7 @@ pre-commit: pre-commit-install ## run pre-commit
 .PHONY: test
 .SILENT: test
 test: install ## run tests
-	gotestsum
+	gotestsum --format dots
 
 .PHONY: build
 .SILENT: build
